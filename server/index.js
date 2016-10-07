@@ -34,7 +34,7 @@ let cheeses = [
 app.use(express.static(process.env.CLIENT_PATH));
 
 app.get("/cheeses" , function(req,res){
-   res.json 
+   res.json(cheeses) 
 })
 
 function runServer() {
